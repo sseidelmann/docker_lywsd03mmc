@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  ble_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    privileged: true
+    #network_mode: host
